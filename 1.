@@ -1,0 +1,22 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugas.minggu.pkg3;
+
+/**
+ *
+ * @author Bravo 15
+ */
+public class a {
+    public static void main(String[] args) {
+        String[] siswa1 = {"Achmad", "Amreza", "Alfarit"};
+        System.out.print("Nama : ");
+        for (String data : siswa1) {
+            System.out.print(data + " ");
+        }
+        System.out.println("");
+    }
+    
+}
