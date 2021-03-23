@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugas.minggu.pkg3;
+
+import static java.time.Clock.system;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Bravo 15
+ */
+public class e {
+   public static void main(String[] args) {
+       
+       Scanner s = new Scanner(System.in);
+       System.out.println("                  CAFE CERIA");
+       System.out.println("                 ANEKA MINUMAN");
+       System.out.println("--------------------------------------------------");
+       System.out.println("                 Spesial Menu");
+       System.out.println("1. Soft Drink");
+       System.out.println("2. Mix Juice");
+       System.out.println("3. Nescafe");
+       System.out.println("4. Soda milk");
+       System.out.println("5. Tea");
+       System.out.println("--------------------------------------------------");
+       System.out.println(" Silahkan masukkan nama pembeli : ");
+       String nama = s.nextLine();
+       System.out.println("Silahkan masukkan pilihan kamu : ");
+       
+       int op = s.nextInt();
+       String pilihan = "";
+       
+       switch (op) {
+           case 1:
+               pilihan = "Soft Drink";
+               break;
+           case 2:
+               pilihan = "Mix Juice";
+               break;
+           case 3:
+               pilihan = "Nescafe";
+               break;
+           case 4:
+               pilihan = "Soda milk";
+               break;
+           case 5:
+               pilihan = "Tea";
+               break;
+       }
+       
+       System.out.println("Minuman yang anda pilih : " + pilihan);
+       System.out.println("Pesanan anda akan segera di antar");
+       System.out.println("Terimakasih " + nama + "Telah Berkunjung di kafe kami");
+       
+           
+   }
+}
