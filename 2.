@@ -1,0 +1,32 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tugas.minggu.pkg3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Bravo 15
+ */
+public class b {
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        System.out.print("Masukan jumlah nilai untuk array secara random :");
+        int v = s.nextInt();
+        int[] randomNumber = new int[v];
+        
+        for (int i = 0; i < v; i++) {
+                System.out.print("nilai ke-" + i +" : ");
+                randomNumber[i] = s.nextInt();
+    }
+        System.out.print(" Array : ");
+        System.out.print(" [ ");
+        for (int i : randomNumber) {
+            System.out.print(i + " ");
+        }
+        System.out.println("]");       
+  }
+}
